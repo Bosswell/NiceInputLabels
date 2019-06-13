@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nice input labels</title>
+        <link rel="stylesheet" href="nice-input-label.css">
+    </head>
+
+    <body>
+        <form>
+            <div class="custom-input-group">
+                <label for="login-email" class="custom-input-group--label">Adres email</label>
+                <input type="email" class="custom-input-group--input" title="Wpisz poprawny adres email" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="login-email" name="email" required>
+            </div>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="nice-input-label.js"></script>
+        <script>
+            $(function () {
+                new NiceInputLabel(".custom-input-group");
+            });
+        </script>
+    </body>
+</html>

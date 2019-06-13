@@ -1,0 +1,58 @@
+.custom-input-group--input {
+    max-width: 400px;
+    width: 100%;
+    padding: 14px 10px 6px 15px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #0003;
+    font-size: 17px;
+    color: transparent;
+    background: transparent;
+}
+
+.custom-input-group--input:active,
+.custom-input-group--input:focus {
+    outline: 0;
+    box-shadow: none;
+    border-bottom-color: #0009;
+}
+
+.custom-input-group--input.invalidInput {
+    border-bottom-color: #e0211b;
+}
+
+.custom-input-group--input.validInput {
+    border-bottom-color: #88CC00;
+}
+
+.custom-input-group--label {
+    font-weight: 400;
+    color: #0008;
+    font-size: 17px;
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    cursor: text;
+    background: #FFF;
+    padding: 0 10px;
+    transition: 0.3s ease;
+    transition-property: font-size, top;
+}
+
+.custom-input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.custom-input-group.active-label .custom-input-group--label {
+    top: -40px;
+    font-size: 14px;
+}
+
+.custom-input-group.active-label .custom-input-group--input {
+    color: #555;
+    transition-delay: 0.3s;
+}
